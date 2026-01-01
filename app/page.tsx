@@ -108,7 +108,7 @@ export default function Home() {
       <div className="relative z-10 overflow-x-hidden">
         <Header />
         
-        <main className="pt-12 sm:pt-16 md:pt-20">
+        <main className="pt-4 sm:pt-8 md:pt-20">
           <Hero />
           <ResultsSection />
           <ServicesGrid />
