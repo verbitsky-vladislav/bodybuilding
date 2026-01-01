@@ -2,7 +2,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ComparisonTable from '@/components/ComparisonTable';
 import ServiceCard from '@/components/ServiceCard';
-import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -25,31 +24,13 @@ export default function PhoneConsultationPage() {
       <main className="pt-16 md:pt-20">
         {/* Hero Section */}
         <section className="bg-white py-12 md:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-              {/* Text Content */}
-              <div className="text-center md:text-left">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4" style={{ color: '#0a0a0a' }}>
-                  Dr. Magomed Batalov | Endocrinology & Hormones
-                </h1>
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold" style={{ color: '#0a0a0a' }}>
-                  30-Minute Phone Consultation
-                </h2>
-              </div>
-              
-              {/* Photo */}
-              <div className="relative order-first md:order-last">
-                <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-lg overflow-hidden">
-                  <Image
-                    src="/main_photo.jpeg"
-                    alt="Dr. Magomed Batalov"
-                    fill
-                    className="object-cover object-center"
-                    priority
-                  />
-                </div>
-              </div>
-            </div>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4" style={{ color: '#0a0a0a' }}>
+              Dr. Magomed Batalov | Endocrinology & Hormones
+            </h1>
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold" style={{ color: '#0a0a0a' }}>
+              30-Minute Phone Consultation
+            </h2>
           </div>
         </section>
 
@@ -62,6 +43,7 @@ export default function PhoneConsultationPage() {
                 monthlyPrice="Talk to Dr. Batalov"
                 totalPrice="249"
                 description="Speak with Dr. Magomed Batalov, M.D. to take your first step toward elite, physician-led transformation with a 30-Minute Phone Consultation."
+                imageUrl="/main_photo.jpeg"
               />
             </div>
           </div>
