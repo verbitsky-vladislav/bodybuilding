@@ -31,60 +31,60 @@ export default function ImageGallery() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
-                {/* First image */}
-                <div className="relative w-full aspect-square sm:aspect-[4/3] md:aspect-[3/2]">
-                  <Image
-                    src={images[0].src}
-                    alt={images[0].alt}
-                    fill
-                    className="object-contain object-center"
-                    loading="lazy"
-                  />
-                </div>
+          {/* First image */}
+          <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px]">
+            <Image
+              src={images[0].src}
+              alt={images[0].alt}
+              fill
+              className="object-contain object-center"
+              loading="lazy"
+            />
+          </div>
 
-                {/* Second image */}
-                <div className="relative w-full aspect-square sm:aspect-[4/3] md:aspect-[3/2]">
-                  <Image
-                    src={images[1].src}
-                    alt={images[1].alt}
-                    fill
-                    className="object-contain object-center"
-                    loading="lazy"
-                  />
-                </div>
+          {/* Second image */}
+          <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px]">
+            <Image
+              src={images[1].src}
+              alt={images[1].alt}
+              fill
+              className="object-contain object-center"
+              loading="lazy"
+            />
+          </div>
 
-                {/* Third image - wider, spans 2 columns on large screens */}
-                <div className="relative w-full aspect-square sm:aspect-[4/3] md:aspect-[3/2] lg:col-span-2">
-                  <Image
-                    src={images[2].src}
-                    alt={images[2].alt}
-                    fill
-                    className="object-contain object-center"
-                    loading="lazy"
-                  />
-                </div>
+          {/* Third image - wider, spans 2 columns on large screens */}
+          <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] lg:col-span-2">
+            <Image
+              src={images[2].src}
+              alt={images[2].alt}
+              fill
+              className="object-contain object-center"
+              loading="lazy"
+            />
+          </div>
 
-                {/* Fourth image */}
-                <div className="relative w-full aspect-square sm:aspect-[4/3] md:aspect-[3/2]">
-                  <Image
-                    src={images[3].src}
-                    alt={images[3].alt}
-                    fill
-                    className="object-contain object-center"
-                    loading="lazy"
-                  />
-                </div>
+          {/* Fourth image */}
+          <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px]">
+            <Image
+              src={images[3].src}
+              alt={images[3].alt}
+              fill
+              className="object-contain object-center"
+              loading="lazy"
+            />
+          </div>
 
-                {/* Fifth image - taller */}
-                <div className="relative w-full aspect-square sm:aspect-[4/3] md:aspect-[3/2] lg:aspect-[16/9] lg:col-span-3">
-                  <Image
-                    src={images[4].src}
-                    alt={images[4].alt}
-                    fill
-                    className="object-contain object-center"
-                    loading="lazy"
-                  />
-                </div>
+          {/* Fifth image - taller */}
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] lg:col-span-3">
+            <Image
+              src={images[4].src}
+              alt={images[4].alt}
+              fill
+              className="object-contain object-center"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>
