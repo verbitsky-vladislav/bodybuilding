@@ -24,10 +24,10 @@ export default function NewsletterSection() {
   return (
     <section className="relative py-12 sm:py-16 my-8 md:my-12">
       {/* Background overlay - slightly wider than content */}
-      <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-[90rem] bg-white/70 backdrop-blur-md border border-white/20 shadow-2xl rounded-2xl"></div>
+      <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-[90rem] bg-white/70 backdrop-blur-md border border-white/20 shadow-2xl rounded-2xl"></div>
       
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="text-center mb-6 sm:mb-8 md:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-3 md:mb-4 leading-tight" style={{ color: '#0a0a0a' }}>
             PRO LEVEL <span className="text-red-500">INSIGHT</span>

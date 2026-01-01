@@ -60,12 +60,12 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               {/* Photo */}
               <div className="relative order-2 md:order-1">
-                <div className="relative h-64 sm:h-80 md:h-96 w-full max-w-sm mx-auto md:max-w-none md:w-80 rounded-lg overflow-hidden">
+                <div className="relative w-full max-w-sm mx-auto md:max-w-none md:w-80 aspect-[2/3] rounded-lg overflow-hidden">
                   <Image
                     src="/main_photo.jpeg"
                     alt="Dr. Magomed Batalov"
                     fill
-                    className="object-cover object-center"
+                    className="object-contain object-center"
                     priority
                   />
                 </div>

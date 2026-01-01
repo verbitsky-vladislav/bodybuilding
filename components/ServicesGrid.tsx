@@ -35,13 +35,13 @@ export default function ServicesGrid() {
               className="bg-white rounded-lg overflow-hidden shadow-lg"
             >
               {/* Image */}
-              <div className="relative w-full h-64">
+              <div className="relative w-full aspect-[4/3]">
                 {service.imageUrl && (
                   <Image
                     src={service.imageUrl}
                     alt={service.title}
                     fill
-                    className="object-cover object-center"
+                    className="object-contain object-center"
                   />
                 )}
               </div>

@@ -12,12 +12,12 @@ export default function ResultsSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 items-center">
           {/* Left Column - Doctor Image */}
           <div className="relative order-2 md:order-1">
-            <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[800px]">
+            <div className="relative w-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[600px] xl:min-h-[800px] aspect-[2/3]">
               <Image
                 src="/main_photo.jpeg"
                 alt="Dr. Magomed Batalov"
                 fill
-                className="object-cover object-center"
+                className="object-contain object-center"
                 priority
               />
             </div>

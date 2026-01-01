@@ -23,13 +23,13 @@ export default function ServiceCard({
       </div>
 
       {/* Image */}
-      <div className="relative h-64 bg-gray-200">
+      <div className="relative w-full aspect-[4/3] bg-gray-200">
         {imageUrl ? (
           <Image
             src={imageUrl}
             alt={title}
             fill
-            className="object-cover"
+            className="object-contain"
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-gray-400">
