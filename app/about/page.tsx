@@ -1,11 +1,55 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import StructuredData from '@/components/StructuredData';
 import Link from 'next/link';
+import Image from 'next/image';
 import { HiArrowRight } from 'react-icons/hi';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "About Dr. Magomed Batalov, M.D.",
+  description: "Learn about Dr. Magomed Batalov, M.D. - Medical doctor and endocrinologist specializing in hormone health, metabolic disorders, TRT, and performance optimization. 100+ clients per month.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Dr. Magomed Batalov, M.D. - Endocrinologist",
+    description: "Medical doctor specializing in endocrinology, hormone health, metabolic disorders, and performance optimization.",
+  },
+};
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
+      {/* Structured Data */}
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Dr. Magomed Batalov",
+          "jobTitle": "Medical Doctor, Endocrinologist",
+          "description": "Medical doctor specializing in endocrinology, hormone health, metabolic disorders, and performance optimization",
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Sechenov University"
+          },
+          "knowsAbout": [
+            "Endocrinology",
+            "Hormone Optimization",
+            "Testosterone Replacement Therapy",
+            "Metabolic Health",
+            "Type 2 Diabetes",
+            "Male Fertility",
+            "Competition Prep",
+            "Bodybuilding"
+          ],
+          "hasCredential": {
+            "@type": "EducationalOccupationalCredential",
+            "credentialCategory": "Medical Degree"
+          }
+        }}
+      />
+
       <Header />
       
       <main className="pt-16 md:pt-20">
@@ -16,10 +60,14 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               {/* Photo */}
               <div className="relative order-2 md:order-1">
-                <div className="relative h-64 sm:h-80 md:h-96 w-full max-w-sm mx-auto md:max-w-none md:w-80 bg-gray-200 rounded-lg overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center text-gray-400">
-                    Photo
-                  </div>
+                <div className="relative h-64 sm:h-80 md:h-96 w-full max-w-sm mx-auto md:max-w-none md:w-80 rounded-lg overflow-hidden">
+                  <Image
+                    src="/main_photo.jpeg"
+                    alt="Dr. Magomed Batalov"
+                    fill
+                    className="object-cover object-center"
+                    priority
+                  />
                 </div>
               </div>
               

@@ -14,7 +14,7 @@ export default function ResultsSection() {
           <div className="relative order-2 md:order-1">
             <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[800px]">
               <Image
-                src="https://static.wixstatic.com/media/02c7d6_2d90c498601c4bfe80ec92794c7213fa~mv2.jpg/v1/fill/w_612,h_991,al_c,q_85,enc_avif,quality_auto/IMG_20240908_021232_564.jpg"
+                src="/main_photo.jpeg"
                 alt="Dr. Magomed Batalov"
                 fill
                 className="object-cover object-center"

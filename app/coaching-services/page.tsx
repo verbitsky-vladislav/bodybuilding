@@ -3,6 +3,19 @@ import ServiceCard from '@/components/ServiceCard';
 import ComparisonTable from '@/components/ComparisonTable';
 import Footer from '@/components/Footer';
 import { services } from '@/data/services';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Coaching Services",
+  description: "Professional coaching services from Dr. Magomed Batalov, M.D. - Competition Prep, Lifestyle Coaching, Concierge Wellness, Nutrition Planning, and Bloodwork Analysis. Payment plans available.",
+  alternates: {
+    canonical: "/coaching-services",
+  },
+  openGraph: {
+    title: "Coaching Services | Dr. Magomed Batalov, M.D.",
+    description: "Professional coaching services including competition prep, lifestyle coaching, and hormone optimization.",
+  },
+};
 
 export default function CoachingServicesPage() {
   return (
