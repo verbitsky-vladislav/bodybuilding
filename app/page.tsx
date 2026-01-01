@@ -37,11 +37,25 @@ export default function Home() {
           overflow: 'hidden'
         }}
       >
+        {/* Desktop background */}
         <Image
           src="/background.jpg"
           alt="Background"
           fill
-          className="object-cover"
+          className="hidden md:block object-cover"
+          priority
+          quality={90}
+          style={{
+            objectFit: 'cover',
+            objectPosition: 'center'
+          }}
+        />
+        {/* Mobile/Tablet background */}
+        <Image
+          src="/background_mobile.png"
+          alt="Background"
+          fill
+          className="block md:hidden object-cover"
           priority
           quality={90}
           style={{
