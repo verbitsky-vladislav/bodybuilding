@@ -47,7 +47,7 @@ export const services: Service[] = [
     monthlyPrice: '$249',
     totalPrice: '249',
     description: 'Speak with Dr. Magomed Batalov, M.D. to take your first step toward elite, physician-led transformation with a 30-Minute Phone Consultation.',
-    imageUrl: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=800&h=600&fit=crop&q=80',
+    imageUrl: '/phone_consultation.jpg',
   },
 ];
 
