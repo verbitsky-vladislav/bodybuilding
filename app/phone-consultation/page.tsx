@@ -43,7 +43,7 @@ export default function PhoneConsultationPage() {
                 monthlyPrice="Talk to Dr. Batalov"
                 totalPrice="249"
                 description="Speak with Dr. Magomed Batalov, M.D. to take your first step toward elite, physician-led transformation with a 30-Minute Phone Consultation."
-                imageUrl="/main_photo.jpeg"
+                imageUrl="/phone_consultation.jpg"
               />
             </div>
           </div>

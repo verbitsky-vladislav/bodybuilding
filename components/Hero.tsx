@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-start md:items-center justify-center">
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-0 sm:py-4 md:py-0">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-4 sm:py-8 md:py-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left side - Text content */}
           <div className="text-center md:text-left" style={{ color: '#0a0a0a' }}>
