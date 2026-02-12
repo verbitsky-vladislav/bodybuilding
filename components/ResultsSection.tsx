@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function ResultsSection() {
   return (
-    <section className="relative py-16 my-8 md:my-12">
+    <section className="relative py-8 md:py-16 my-4 md:my-12">
       {/* Background overlay - slightly wider than content */}
       <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-[90rem] bg-white/70 backdrop-blur-md border border-white/20 shadow-2xl rounded-2xl"></div>
       

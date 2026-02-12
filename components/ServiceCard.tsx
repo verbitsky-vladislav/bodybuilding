@@ -42,9 +42,14 @@ export default function ServiceCard({
       <div className="p-4 sm:p-6">
         <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4" style={{ color: '#0a0a0a' }}>{title}</h3>
         
-        <button className="w-full bg-black text-white py-2.5 sm:py-3 px-4 sm:px-6 text-sm sm:text-base font-semibold hover:bg-gray-800 transition-colors mb-3 sm:mb-4">
+        <a
+          href="https://wa.me/79252408645"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-full bg-black text-white py-2.5 sm:py-3 px-4 sm:px-6 text-sm sm:text-base font-semibold hover:bg-gray-800 transition-colors mb-3 sm:mb-4 block text-center"
+        >
           BUY NOW
-        </button>
+        </a>
 
         {/* Total price */}
         <div className="flex items-baseline mb-3 sm:mb-4">

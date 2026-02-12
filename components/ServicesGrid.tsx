@@ -61,9 +61,14 @@ export default function ServicesGrid() {
                 </h2>
 
                 {/* Button */}
-                <button className="w-full bg-black text-white py-3 px-6 font-semibold hover:bg-gray-800 transition-colors">
+                <a
+                  href="https://wa.me/79252408645"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-black text-white py-3 px-6 font-semibold hover:bg-gray-800 transition-colors block text-center"
+                >
                   BUY NOW
-                </button>
+                </a>
               </div>
             </div>
           ))}
