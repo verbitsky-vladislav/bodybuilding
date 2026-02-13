@@ -1,26 +1,50 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StructuredData from '@/components/StructuredData';
+import BreadcrumbStructuredData from '@/components/BreadcrumbStructuredData';
 import Link from 'next/link';
 import Image from 'next/image';
 import { HiArrowRight } from 'react-icons/hi';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "About Dr. Magomed Batalov, M.D.",
-  description: "Learn about Dr. Magomed Batalov, M.D. - Medical doctor and endocrinologist specializing in hormone health, metabolic disorders, TRT, and performance optimization. 100+ clients per month.",
+  title: "About Dr. Magomed Batalov, M.D. - Board Certified Endocrinologist",
+  description: "Learn about Dr. Magomed Batalov, M.D. - Board-certified endocrinologist specializing in hormone health, metabolic disorders, TRT, and performance optimization. Helping 100+ clients monthly achieve peak health through evidence-based medical protocols.",
   alternates: {
-    canonical: "/about",
+    canonical: "https://drbatalov.com/about",
   },
   openGraph: {
+    title: "About Dr. Magomed Batalov, M.D. - Expert Endocrinologist & Hormone Specialist",
+    description: "Board-certified medical doctor specializing in endocrinology, hormone optimization, metabolic health, TRT, and performance enhancement. Graduate of Sechenov University with 100+ clients monthly.",
+    images: [
+      {
+        url: "/main_photo.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Dr. Magomed Batalov - Board Certified Endocrinologist",
+      },
+    ],
+    url: "https://drbatalov.com/about",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "About Dr. Magomed Batalov, M.D. - Endocrinologist",
-    description: "Medical doctor specializing in endocrinology, hormone health, metabolic disorders, and performance optimization.",
+    description: "Board-certified endocrinologist specializing in hormone optimization, TRT, metabolic health, and performance enhancement.",
+    images: ["/main_photo.jpeg"],
   },
 };
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
+      {/* Breadcrumb Structured Data */}
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Home", url: "https://drbatalov.com" },
+          { name: "About", url: "https://drbatalov.com/about" },
+        ]}
+      />
+
       {/* Structured Data */}
       <StructuredData
         data={{

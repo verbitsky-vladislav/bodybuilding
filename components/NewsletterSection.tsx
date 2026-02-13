@@ -49,7 +49,7 @@ export default function NewsletterSection() {
             <span>Telegram</span>
           </a>
           <a
-            href="https://www.instagram.com/battlemagomed/"
+            href="https://www.instagram.com/doc_batalov/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 w-full sm:w-auto text-white px-8 py-4 text-base font-semibold transition-colors rounded-lg shadow-lg"

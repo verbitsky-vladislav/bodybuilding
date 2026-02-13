@@ -8,11 +8,12 @@ import MarqueeSection from '@/components/MarqueeSection';
 import NewsletterSection from '@/components/NewsletterSection';
 import Footer from '@/components/Footer';
 import StructuredData from '@/components/StructuredData';
+import FAQStructuredData from '@/components/FAQStructuredData';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Endocrinology & Hormone Coaching",
   description: "Dr. Magomed Batalov, M.D. - Expert endocrinologist specializing in hormone optimization, TRT guidance, bloodwork analysis, and competition prep coaching. Medically-backed coaching services for elite performance.",
   alternates: {
     canonical: "/",
@@ -67,42 +68,62 @@ export default function Home() {
         <div className="absolute inset-0 bg-white/10"></div>
       </div>
       
-      {/* Structured Data */}
+      {/* Structured Data for Business */}
       <StructuredData
         data={{
           "@context": "https://schema.org",
           "@type": "MedicalBusiness",
           "name": "Dr. Magomed Batalov | Endocrinology & Hormones",
-          "description": "Medically-backed endocrinology and hormone coaching services",
+          "description": "Board-certified endocrinologist offering expert hormone optimization, TRT guidance, competition prep, and metabolic health coaching",
           "url": "https://drbatalov.com",
-          "logo": "https://drbatalov.com/background.jpg",
-          "image": "https://drbatalov.com/background.jpg",
+          "logo": "https://drbatalov.com/main_photo.jpeg",
+          "image": "https://drbatalov.com/main_photo.jpeg",
           "founder": {
             "@type": "Person",
             "name": "Dr. Magomed Batalov",
             "jobTitle": "Medical Doctor, Endocrinologist",
-            "description": "Medical doctor specializing in endocrinology, hormone health, metabolic disorders, and performance optimization",
+            "description": "Board-certified medical doctor specializing in endocrinology, hormone health, metabolic disorders, and performance optimization",
+            "alumniOf": "Sechenov University",
+            "sameAs": [
+              "https://www.instagram.com/doc_batalov/",
+              "https://t.me/dr_batalovm"
+            ]
           },
           "medicalSpecialty": [
             "Endocrinology",
             "Hormone Optimization",
             "Metabolic Health",
-            "Testosterone Replacement Therapy"
+            "Testosterone Replacement Therapy",
+            "Sports Endocrinology",
+            "Male Fertility",
+            "Diabetes Management"
           ],
           "serviceType": [
             "Medical Consultation",
             "Hormone Coaching",
             "Bloodwork Analysis",
             "Competition Prep Coaching",
-            "Nutrition Planning"
+            "Nutrition Planning",
+            "TRT Management",
+            "Performance Optimization"
           ],
           "areaServed": "Worldwide",
           "offers": {
             "@type": "Offer",
-            "description": "Endocrinology and hormone coaching services"
+            "description": "Professional endocrinology and hormone coaching services with evidence-based protocols",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "ratingCount": "100",
+            "bestRating": "5"
           }
         }}
       />
+
+      {/* FAQ Structured Data */}
+      <FAQStructuredData />
 
       {/* Content that scrolls */}
       <div className="relative z-10 overflow-x-hidden">

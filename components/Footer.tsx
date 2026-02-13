@@ -46,7 +46,7 @@ export default function Footer() {
           <div>
             <h6 className="font-semibold mb-4">Follow Us</h6>
             <div className="flex space-x-4 mb-6">
-              <a href="https://www.instagram.com/battlemagomed/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/doc_batalov/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <FaInstagram className="h-6 w-6" />
               </a>
               <a href="https://wa.me/79252408645" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">

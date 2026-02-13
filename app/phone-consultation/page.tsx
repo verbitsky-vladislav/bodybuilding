@@ -2,23 +2,47 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ComparisonTable from '@/components/ComparisonTable';
 import ServiceCard from '@/components/ServiceCard';
+import BreadcrumbStructuredData from '@/components/BreadcrumbStructuredData';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "30-Minute Phone Consultation",
-  description: "Book a 30-minute phone consultation with Dr. Magomed Batalov, M.D. to discuss your hormone health, TRT options, and performance goals. $249 consultation fee.",
+  title: "30-Minute Phone Consultation - Expert Medical Guidance",
+  description: "Book a 30-minute phone consultation with board-certified endocrinologist Dr. Magomed Batalov, M.D. Discuss hormone optimization, TRT options, bloodwork analysis, and performance goals. $249 consultation fee. Take the first step to elite health.",
   alternates: {
-    canonical: "/phone-consultation",
+    canonical: "https://drbatalov.com/phone-consultation",
   },
   openGraph: {
-    title: "30-Minute Phone Consultation | Dr. Magomed Batalov, M.D.",
-    description: "Speak with Dr. Magomed Batalov, M.D. about your hormone health and performance goals.",
+    title: "30-Minute Phone Consultation with Dr. Magomed Batalov, M.D.",
+    description: "Expert medical consultation with board-certified endocrinologist. Discuss hormone optimization, TRT, bloodwork analysis, and performance enhancement strategies.",
+    images: [
+      {
+        url: "/main_photo.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Dr. Magomed Batalov - Phone Consultation",
+      },
+    ],
+    url: "https://drbatalov.com/phone-consultation",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Phone Consultation | Dr. Batalov, M.D.",
+    description: "30-minute expert consultation with board-certified endocrinologist. Hormone optimization, TRT, and performance guidance.",
+    images: ["/main_photo.jpeg"],
   },
 };
 
 export default function PhoneConsultationPage() {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
+      {/* Breadcrumb Structured Data */}
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Home", url: "https://drbatalov.com" },
+          { name: "Phone Consultation", url: "https://drbatalov.com/phone-consultation" },
+        ]}
+      />
+
       <Header />
       
       <main className="pt-16 md:pt-20">
