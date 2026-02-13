@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://drbatalov.com'),
+  metadataBase: new URL('https://dr-batalovm.vercel.app'),
   title: {
     default: "Dr. Magomed Batalov — Endocrinologist & Hormone Specialist | Elite Performance Optimization",
     template: "%s | Dr. Batalov",
@@ -59,7 +61,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://drbatalov.com",
+    url: "https://dr-batalovm.vercel.app",
     siteName: "Dr. Batalov — Elite Endocrinologist",
     title: "Dr. Magomed Batalov — Endocrinologist & Hormone Specialist | Transform Your Performance",
     description: "Expert medical guidance for hormone optimization, TRT, competition prep, and metabolic health from board-certified endocrinologist Dr. Magomed Batalov, M.D. Evidence-based protocols for elite results.",
@@ -94,7 +96,8 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://drbatalov.com",
+
+    canonical: "https://dr-batalovm.vercel.app",
   },
   verification: {
     // Add verification codes here when available
@@ -124,6 +127,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
